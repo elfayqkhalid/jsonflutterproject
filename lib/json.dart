@@ -12,7 +12,7 @@ class TestJson extends StatefulWidget {
 class _TestJsonState extends State<TestJson> {
   Future getData() async {
 
-    var url = "https://jsonplaceholder.typicode.com/posts";
+    var url = "https://raw.githubusercontent.com/elfayqkhalid/jsonflutterproject/main/productlist.json";
     var response = await http.get(Uri.parse(url));
     var responseBody = jsonDecode(response.body);
     return responseBody;
@@ -33,7 +33,7 @@ class _TestJsonState extends State<TestJson> {
                   itemCount: snapshot.data.length, //10
                   itemBuilder: (context, i) {
                     return Container(
-                      child: Text(snapshot.data[i]['title']),
+                      child: Text(snapshot.data[i]['name']),
                     );
                   });
             } else
