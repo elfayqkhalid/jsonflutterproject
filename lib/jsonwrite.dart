@@ -16,8 +16,8 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
 
-  TextEditingController keyInputController = new TextEditingController();
-  TextEditingController valueInputController = new TextEditingController();
+  TextEditingController keyInputController =  TextEditingController();
+  TextEditingController valueInputController = TextEditingController();
 
   late File jsonFile;
   late Directory dir;
