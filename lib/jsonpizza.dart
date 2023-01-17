@@ -4,11 +4,11 @@ import 'package:flutter/services.dart' as rootBundle;
 import 'jsonproductdatamodel.dart';
 import 'jsonpizzanext.dart';
 
-void main() {
-  runApp(MyApp());
-}
+/*void main() {
+  runApp(JsonPizza());
+}*/
 
-class MyApp extends StatelessWidget {
+class JsonPizza extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -38,7 +38,7 @@ class Resto extends StatelessWidget {
               Text(
                 "Prix : ${produit.price.toString()} DH",
                 style: const TextStyle(
-                  fontSize: 30.0,
+                  fontSize: 25.0,
                   color: Colors.blue,
                 ),
               ),
